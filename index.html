@@ -1,0 +1,27 @@
+<html> 
+<head> 
+<script type="text/javascript"> 
+function changes(){ 
+var images = new Array(); 
+images = document.images; 
+for(var i = 0; i < images.length; i++){ 
+var str = "" 
+for(var j = 0; j < images[i].src.length-4; j++){ 
+str = str+ images[i].src[j]; 
+} 
+str = str+ "_.jpg"; 
+images[i].src = str; 
+} 
+
+document.images = images; 
+} 
+</script> 
+</head> 
+<body id="body"> 
+<div> 
+<img src="123.jpg"> 
+</div> 
+
+<input type="button" value="click" onclick="changes()"> 
+
+</body> 
