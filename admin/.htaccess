@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Admin Panel"
-AuthUserFile /Applications/XAMPP/xamppfiles/htdocs/apple_blog/admin/.htpasswd
-Require valid-user
