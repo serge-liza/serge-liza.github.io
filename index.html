@@ -1,27 +1,20 @@
-<html> 
-<head> 
-<script type="text/javascript"> 
-function changes(){ 
-var images = new Array(); 
-images = document.images; 
-for(var i = 0; i < images.length; i++){ 
-var str = "" 
-for(var j = 0; j < images[i].src.length-4; j++){ 
-str = str+ images[i].src[j]; 
-} 
-str = str+ "_.jpg"; 
-images[i].src = str; 
-} 
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<?php
 
-document.images = images; 
-} 
-</script> 
-</head> 
-<body id="body"> 
-<div> 
-<img src="123.jpg"> 
-</div> 
+    require_once("database.php");//файл для работы с БД
+    require_once("models/articles_models.php");//файл функций для работы со статьями
+    
+    $link = db_connect();
+    $articles = articles_all($link);
+    
+    include("views/articles_view.php");//вид, в котором будут выводиться статьи
 
-<input type="button" value="click" onclick="changes()"> 
+?>
 
-</body> 
+</body>
+</html>
