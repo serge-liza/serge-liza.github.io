@@ -6,14 +6,10 @@ body{
 
 .index{
 	padding-top: 15%;
-	opacity: 0;
 	transition: 1s;
 
 }
 
-.index:hover{
-	opacity: 1;
-}
 
 
 img{
