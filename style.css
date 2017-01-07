@@ -1,67 +1,37 @@
-* {box-sizing: border-box;}
-.widget {
-  padding: 30px;
+body{
+	text-align: center;
+	align-content: center;
 }
-.widget-title {
-  font-family: 'Roboto', sans-serif;
-  text-align: left;
-  text-transform: uppercase;
-  line-height: 50px;
-  letter-spacing: 5px;
-  color: black;
-  font-size: 22px;
-  padding-left: 15px;
-  border-left: 2px solid #80ffd4;
+
+
+.index{
+	padding-top: 15%;
+	opacity: 0;
+	transition: 1s;
+
 }
-.widget-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+
+.index:hover{
+	opacity: 1;
 }
-.widget-list li {
-  margin-bottom: 10px;
-  font-family: Roboto;
-  line-height: 26px;
-  letter-spacing: 1px;
-  font-weight: 300;
-  color: #444;
+
+
+img{
+	width: 500px;
+	height: 150px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+
+}
+a:hover{
+	color: pink;
+}
+#navbar {
+ 
+  list-style-type: none;
   font-size: 20px;
 }
-.widget-list li:before {
-  content: '-';
-  margin-right: 15px;
-}
-.widget-list a {
-  text-decoration: none;
-  color: black;
-  outline: 0;
-  -webkit-transition: .4s linear;
-  -moz-transition: .4s linear;
-  -o-transition: .4s linear;
-  transition: .4s linear;
-}
-.widget-list a:hover {
-  color: #80ffd4;
-}
-
-body{
-  background: url("background.jpg");
-}
-
-.footer{
-  text-align: center;
-  margin: 0px auto 0;
-  position: relative;
-}
-
-h1{
-  font-family: 'Roboto', sans-serif;
-  text-align: left;
-  text-transform: uppercase;
-  line-height: 50px;
-  letter-spacing: 5px;
-  color: black;
-  font-size: 22px;
-  padding-left: 15px;
-  border-left: 2px solid #80ffd4;
-}
+#navbar li { display: inline; }
